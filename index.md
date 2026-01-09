@@ -10,11 +10,11 @@ Throughout the course, you’ll work extensively with the command line, scriptin
 
 ## Getting Started
 
-To get started with the course, please follow the **[Setup Instructions](setup/)** to configure your development environment.
+To get started with the course, please follow the **[Setup Instructions](setup/README.md)** to configure your development environment.
 
 ## Practice
 
-Work through the **[Hands-on Exercises](practice/exercises.md)** to practice and consolidate concepts introduced during class lectures and discussions. 
+Work through the **[Hands-on Exercises](practice/README.md)** to practice and consolidate concepts introduced during class lectures and discussions. 
 
 Each unit contains an "Advanced Concepts" section that allows you to dive deeper into a topic. **Note: Advanced concepts will not be covered in quizzes or labs.**
 
