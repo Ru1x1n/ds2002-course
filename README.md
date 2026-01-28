@@ -16,6 +16,29 @@ To stay current with new releases into the course repository, follow these steps
 ```
 git remote add upstream https://github.com/ksiller/ds2002-course.git
 ```
+
+If you receive an error `error: remote upstream already exists.`, run these commands to remove the existing `upstream` and readd it.
+
+```
+git remote remove upstream
+git remote add upstream https://github.com/ksiller/ds2002-course.git
+```
+
+Confirm the new `upstream`.
+```
+git remote -v
+```
+
+Output
+```
+origin  URL_OF_YOUR_REPO (fetch)
+origin  URL_OF_YOUR_REPO (push)
+upstream        https://github.com/ksiller/ds2002-course.git (fetch)
+upstream        https://github.com/ksiller/ds2002-course.git (push)
+```
+
+You only have to do this once!
+
 2. Switch to main branch:
 ```
 git switch main
