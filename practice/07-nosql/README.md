@@ -55,13 +55,18 @@ In order to reach the MongoDB Atlas cloud service from the UVA HPC cluster (or o
 
     ![Mongo DB Atlas Cluster](../../docs/images/mongodb-atlas-cluster.png)
 
-2. Click on the `Connect` button of your cluster and select `Shell - Quickly add & update data using MongoDB's Javascript command-line interface`. This will give you a connection string similar to this:
+2. Click on the `Connect` button of your cluster and select `Shell - Quickly add & update data using MongoDB's Javascript command-line interface`. This will give you a `connection string` similar to this:
 
     ```bash
     mongosh "mongodb+srv://ds2002.tmwdrjn.mongodb.net/" --apiVersion 1 --username <username>
     ```
 
-    Customize the command slightly:
+    The `connection URL` is the part between the pair of `#`. In this case:
+    ```bash
+    mongodb+srv://ds2002.tmwdrjn.mongodb.net/
+    ```
+    
+    **Yours will be different.**
 
    - If the URL extends beyond `...mongodb.net/`, delete it from the connection string.
    - Replace `<username>` with the user you created when you signed up for MongoDB Atlas.
@@ -72,7 +77,7 @@ In order to reach the MongoDB Atlas cloud service from the UVA HPC cluster (or o
 Open your `~/.bashrc` and add the following export statement:
 
 ```bash
-    export MONGODB_ATLAS_URL="mongodb+srv://ds2002.tmwdrjn.mongodb.net/"
+    export MONGODB_ATLAS_URL="<YOUR_CONNECTION_URL>" # something like mongodb+srv://ds2002.tmwdrjn.mongodb.net/
     export MONGODB_ATLAS_USER="<YOUR_USERNAME>" # 
     export MONGODB_ATLAS_PWD="<YOUR_PASSWORD>" # 
 ``` 
@@ -427,6 +432,5 @@ For hands-on DynamoDB practice, use <a href="https://aws.amazon.com/dynamodb/get
 * <a href="https://www.youtube.com/watch?v=ofme2o29ngU" target="_blank" rel="noopener noreferrer">MongoDB Crash Course</a>
 * <a href="https://redis.io/docs/" target="_blank" rel="noopener noreferrer">Redis</a>
 * <a href="https://aws.amazon.com/dynamodb/" target="_blank" rel="noopener noreferrer">DynamoDB</a>
-
 
 
