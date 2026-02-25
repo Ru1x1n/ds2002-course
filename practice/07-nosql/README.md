@@ -61,7 +61,7 @@ In order to reach the MongoDB Atlas cloud service from the UVA HPC cluster (or o
     mongosh "mongodb+srv://ds2002.tmwdrjn.mongodb.net/" --apiVersion 1 --username <username>
     ```
 
-    The `connection URL` is the part between the pair of `#`. In this case:
+    The `connection URL` is the part between the pair of `"`. In this case:
     ```bash
     mongodb+srv://ds2002.tmwdrjn.mongodb.net/
     ```
